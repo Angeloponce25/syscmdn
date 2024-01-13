@@ -1,7 +1,6 @@
 <?php
 
 session_start();
-echo $_SESSION['logueado'];
 
 ?>
 <!DOCTYPE html>
@@ -47,8 +46,9 @@ echo $_SESSION['logueado'];
 <body class="hold-transition skin-blue sidebar-mini login-page">
 <?php
 
-if(isset($_SESSION['logueado']) && $_SESSION['logueado'] == true)
+if($_SESSION['logueado'] == true)
 {
+  /*session_destroy();*/
   echo '<div class="wrapper">';
 
     include "modulos/cabecera.php";
