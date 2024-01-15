@@ -45,10 +45,9 @@ session_start();
 
 <body class="hold-transition skin-blue sidebar-mini login-page">
 <?php
-
 if($_SESSION['logueado'] == true)
 {
-  /*session_destroy();*/
+  /*session_destroy();*/  
   echo '<div class="wrapper">';
 
     include "modulos/cabecera.php";
@@ -60,7 +59,7 @@ if($_SESSION['logueado'] == true)
 }
 
 else
-{
+{  
   include "modulos/login.php";
 }
 
@@ -79,6 +78,7 @@ else
 <script src="Vista/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="Vista/dist/js/demo.js"></script>
+<script src="Vista/js/sesion.js"></script>
 <script>
   $(document).ready(function () {
     $('.sidebar-menu').tree()

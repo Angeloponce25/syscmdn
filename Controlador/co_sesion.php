@@ -23,22 +23,23 @@ class co_sesion{
 
 				if($resultado["u_username"] == $_POST["usuario-Ing"] && $resultado["u_password"]== md5($_POST["clave-Ing"])){
 
-					$_SESSION["Ingresar"] = true;
+					/*$_SESSION["Ingresar"] = true;*/
+					
+					$_SESSION["logueado"] = true;
+					
 
 					$_SESSION["tpu_descripcion"] = $resultado["tpu_descripcion"];
-					/*$_SESSION["usuario"] = $resultado["usuario"];
-					$_SESSION["clave"] = $resultado["clave"];
+
+					
+					$_SESSION["usuario"] = $resultado["u_username"];
+					/*$_SESSION["clave"] = $resultado["clave"];
 					$_SESSION["nombre"] = $resultado["nombre"];
 					$_SESSION["apellido"] = $resultado["apellido"];
 					$_SESSION["foto"] = $resultado["foto"];
 					$_SESSION["rol"] = $resultado["rol"];*/
 
-					/*echo '<script>
-
-					window.location = "inicio";
-					</script>';*/
-
-                    echo $_SESSION["tpu_descripcion"];
+					header('Location: /sys/');
+        			exit();
 
 				}else{
                     
