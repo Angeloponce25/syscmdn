@@ -47,12 +47,23 @@ session_start();
 <?php
 if($_SESSION['logueado'] == true)
 {
-  /*session_destroy();*/  
+  /*session_destroy();*/    
   echo '<div class="wrapper">';
 
     include "modulos/cabecera.php";
     include "modulos/menu.php";
-    include "modulos/contenido.php";
+    if(isset($_GET["ruta"])){
+      if($_GET["ruta"] == "inicio")
+      {
+        include "modulos/inicio.php";
+      }
+    }
+    else{
+
+      include "modulos/contenido.php";
+
+    }
+    /*include "modulos/contenido.php";*/
     include "modulos/footer.php";
   echo '<div class="control-sidebar-bg"></div>';
   echo '</div>';
