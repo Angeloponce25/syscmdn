@@ -37,7 +37,11 @@ class co_sesion{
 					$_SESSION["foto"] = $resultado["foto"];
 					$_SESSION["rol"] = $resultado["rol"];*/
 
-					header('Location: /sys/');
+					// Obtén el directorio actual del script
+					$directorio_actual = dirname($_SERVER['PHP_SELF']);
+
+					// Redirige a la ubicación deseada
+					header('Location: ' . $directorio_actual);
         			exit();
 
 				}else{
