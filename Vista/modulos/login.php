@@ -2,10 +2,11 @@
   <div class="login-logo">
     <a href="#"><b>Centro Médico Divino Niño</b></a>
   </div>
+  <div class="login-box-body text-center">
+    <img src="divino.png" alt="" class="img-responsive" style="max-width: 100%; margin: 0 auto;">
+  </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg">Sistema Medico y Administrativo</p>
-
     <form method="post">
 
       <div class="form-group has-feedback">
@@ -19,21 +20,10 @@
 
         <input type="password" class="form-control" name="clave-Ing" placeholder="Contraseña">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-
-      </div>
-
-      <div class="row">
-        <div class="">
-          <button type="submit" class="btn btn-block btn-flat">¿Olvido su contraseña?</button>
+        <div class="col-xs-6 pull-right">
+          <button type="submit" class="btn btn-link btn-flat">¿Olvidó su contraseña?</button>
         </div>
       </div>
-
-      <div class="row">
-        <div class="">
-          <button type="submit" class="btn btn-block btn-flat">¿Olvido su contraseña 2?</button>
-        </div>
-      </div>
-
 
       <div class="row">
        
