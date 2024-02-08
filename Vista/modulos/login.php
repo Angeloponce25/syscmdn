@@ -23,6 +23,12 @@
       </div>
 
       <div class="row">
+        <div class="">
+          <button type="submit" class="btn btn-block btn-flat">¿Olvido su contraseña?</button>
+        </div>
+      </div>
+
+      <div class="row">
        
         <!-- /.col -->
         <div class="col-xs-12">
