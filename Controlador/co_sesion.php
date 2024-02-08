@@ -1,8 +1,7 @@
 <?php
 
 class co_sesion{
-
-	//Ingreso Secretarias
+	
 	public function iniciarSesion(){
 
 		if(isset($_POST["usuario-Ing"])){
